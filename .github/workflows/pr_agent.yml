@@ -23,7 +23,9 @@ jobs:
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_DESCRIPTION.EXTRA_INSTRUCTIONS: 'Please use Japanese.' # PRの説明文が日本語であることを要求
-          PR_REVIEWER.EXTRA_INSTRUCTIONS: 'Please use Japanese.' # PRのレビュアーが日本語であることを要求
-          PR_CODE_SUGGESTIONS.EXTRA_INSTRUCTIONS: 'Please use Japanese.' # PRのコードが日本語であることを要求
+          PR_REVIEWER.EXTRA_INSTRUCTIONS: 'Plex`ase use Japanese.' # PRのレビュアーが日本語であることを要求
+          PR_CODE_SUGGESTIONS.EXTRA_INSTRUCTIONS: | # コードの提案が日本語であることを要求・最新のECMAScript機能を使用していることを要求
+            Please ensure to use Japanese in your review comments. # コードレビューのコメントが日本語であることを要求
+            Additionally, please ensure that the code is written using the latest ECMAScript features.
           github_action.auto_describe: true # PRの説明文を自動生成
           github_action.auto_review: true # PRのレビューを自動生成
