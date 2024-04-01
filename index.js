@@ -1,5 +1,5 @@
 // おみくじの結果の配列
-const results = ["大吉", "吉", "中吉", "小吉", "末吉", "凶"];
+const results = ["大吉", "吉", "中吉", "小吉", "末吉", "凶", "大凶"];
 
 // ランダムなインデックスを作成
 const randomIndex = Math.floor(Math.random() * results.length);
